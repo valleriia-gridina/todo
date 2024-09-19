@@ -1,0 +1,47 @@
+#root {
+}
+
+.container {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form {
+  padding: 10px 15px;
+  background-color: lightgrey;
+  margin-bottom: 25px;
+
+  input,
+  button {
+    height: 50px;
+  }
+
+  input {
+    margin-right: 15px;
+  }
+}
+
+.checkBtn {
+  background-color: lightblue;
+  margin-right: 15px;
+}
+
+.deleteBtn {
+  background-color: lightgreen;
+  margin-left: 15px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+input:checked + span {
+  color: lightgrey;
+}
