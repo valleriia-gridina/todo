@@ -21,7 +21,7 @@ function App() {
     setItems([...items, newItem]);
   };
 
-  // On component mount, set items to local storage
+  // On component change, set items to local storage
   useEffect(() => {
     // Save items to local storage
     localStorage.setItem(ITEMS_LOCAL_STORAGE_KEY, JSON.stringify(items));
@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="container">
       <NewItem onAddNewItem={onAddNewItem} />
-      {items.length !== 0 ? (
+      {items.length ? (
         <ul className="list">
           {items.map((item) => (
             <Item
