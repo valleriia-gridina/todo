@@ -25,7 +25,6 @@ function App() {
   useEffect(() => {
     // Save items to local storage
     localStorage.setItem(ITEMS_LOCAL_STORAGE_KEY, JSON.stringify(items));
-    console.log("set", JSON.stringify(items));
   }, [items]);
 
   const onToggleCheck = (id: number) => {
